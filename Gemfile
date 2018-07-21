@@ -30,6 +30,9 @@ gem 'jbuilder', '~> 2.5'
 # users
 gem 'devise'
 
+# reactjs
+gem 'webpacker'
+gem 'react-rails'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
