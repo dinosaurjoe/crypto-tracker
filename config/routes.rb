@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  root 'home#index'
+
+  get 'home/index'
   get 'users/my_portfolio'
   get 'users/search'
   get 'users/show'
