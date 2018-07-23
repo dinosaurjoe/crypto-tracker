@@ -1,10 +1,16 @@
 class UsersController < ApplicationController
   def my_portfolio
-  end
+    @user_cryptos = current_user.cryptos
+    @user = current_user
 
-  def search
+    respond_to do |format|
+      format.html { render :my_portfolio }
+      format.js { render partial: 'cryptos/list.html' }
+    end
   end
 
   def show
+    @user = User.find(params[:id])
+    @user_cryptos = @user.cryptos
   end
 end
