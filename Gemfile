@@ -34,6 +34,12 @@ gem 'devise'
 gem 'webpacker'
 gem 'react-rails'
 
+
+#bootstrap
+gem 'bootstrap-sass', '3.2.0.2'
+
+gem 'jquery-rails'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
